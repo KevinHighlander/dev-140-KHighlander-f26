@@ -1,0 +1,194 @@
+/* Complementary palette: deep navy blue and warm orange. */
+* {
+    box-sizing: border-box;
+}
+
+/* Type selectors establish the page's typography and layout. */
+body {
+    margin: 0;
+    padding: 24px 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    line-height: 1.7;
+    color: #192f4a;
+    background-color: #eef3f8;
+}
+
+header, nav, main, footer {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1, h2, h3 {
+    line-height: 1.2;
+}
+
+h1 {
+    margin: 0 0 16px;
+    font-size: clamp(2.2rem, 6vw, 3.8rem);
+    letter-spacing: -0.04em;
+}
+
+h2 {
+    margin: 0 0 20px;
+    font-size: 1.8rem;
+}
+
+h3 {
+    margin: 0 0 12px;
+    font-size: 1.2rem;
+}
+
+p {
+    margin: 0 0 18px;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+/* Class selector; box model example 1: header. */
+.page-header {
+    margin-top: 16px;
+    margin-bottom: 20px;
+    padding: 48px 36px;
+    border: 2px solid #192f4a;
+    border-bottom: 8px solid #f5a34d;
+    border-radius: 16px;
+    color: #ffffff;
+    background-color: #192f4a;
+}
+
+.page-header p {
+    color: #ffd4a3;
+    font-size: 1.15rem;
+}
+
+nav {
+    margin-bottom: 28px;
+    padding: 12px;
+    border: 1px solid #c2cfdd;
+    border-radius: 12px;
+    background-color: #ffffff;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav a {
+    display: block;
+    padding: 10px 18px;
+    border-radius: 6px;
+    color: #192f4a;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #192f4a;
+    background-color: #ffe4c5;
+}
+
+a:focus-visible {
+    outline: 3px solid #a54e00;
+    outline-offset: 3px;
+}
+
+/* Box model example 2: each of the three content sections. */
+section {
+    margin: 0 0 24px;
+    padding: 32px;
+    border: 1px solid #c2cfdd;
+    border-radius: 14px;
+    background-color: #ffffff;
+    box-shadow: 0 5px 18px rgba(25, 47, 74, 0.05);
+}
+
+/* ID selectors highlight the introduction and goals. */
+#about {
+    border-left: 6px solid #a54e00;
+}
+
+#goals {
+    border-top: 5px solid #f5a34d;
+    background-color: #fff7ee;
+}
+
+img {
+    display: block;
+    width: 100%;
+    max-width: 640px;
+    height: auto;
+    margin: 24px auto;
+    padding: 6px;
+    border: 1px solid #c2cfdd;
+    border-radius: 12px;
+    background-color: #eef3f8;
+}
+
+/* Box model example 3: the learning-area card. */
+.learning-card {
+    margin: 28px 0 0;
+    padding: 24px;
+    border: 2px solid #d9a66e;
+    border-radius: 10px;
+    background-color: #fff7ee;
+}
+
+ul, ol {
+    margin: 12px 0 0;
+    padding-left: 26px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+li::marker {
+    color: #a54e00;
+    font-weight: bold;
+}
+
+nav li {
+    margin: 0;
+}
+
+footer {
+    margin-top: 32px;
+    margin-bottom: 16px;
+    padding: 20px 16px;
+    border-top: 1px solid #c2cfdd;
+    color: #42566d;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 12px;
+    }
+
+    .page-header {
+        padding: 32px 22px;
+    }
+
+    section {
+        padding: 24px 20px;
+    }
+
+    .learning-card {
+        padding: 18px;
+    }
+
+    nav a {
+        padding: 8px 12px;
+    }
+}
+
