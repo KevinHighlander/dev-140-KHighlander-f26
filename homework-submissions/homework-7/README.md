@@ -1,4 +1,4 @@
-# Homework 4 — JavaScript Interactivity
+# Homework 7 — JavaScript Interactivity
 
 This page builds on Homework 3 without modifying that submission.
 
